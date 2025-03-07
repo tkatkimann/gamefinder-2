@@ -14,7 +14,7 @@ export default function ForwardChain() {
   const askQuestion = (fact) => {
     return (
       <div key={fact}>
-        <p>Does the plant have {fact.replace('_', ' ')}?</p>
+        <p>Har du lyst til at spille {fact.replace('_', ' ')}?</p>
         <button onClick={() => setFacts({ ...facts, [fact]: "Yes" })}>Yes</button>
         <button onClick={() => setFacts({ ...facts, [fact]: "No" })}>No</button>
       </div>
